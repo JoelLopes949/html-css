@@ -1,0 +1,67 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3e2723; /* Marron escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 1.8em;
+    color: #3e2723;
+    margin-top: 20px;
+    border-bottom: 2px solid #3e2723;
+    padding-bottom: 5px;
+}
+
+/* Parágrafos */
+p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3e2723;
+    color: white;
+    margin-top: 20px;
+}
