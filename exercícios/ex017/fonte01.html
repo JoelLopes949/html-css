@@ -7,42 +7,42 @@
     <style>
 
         body {
-            font-family: 'Work Sans' Arial, Helvetica, sans-serif;
-            /*Medidas absolutas
-            cm, mm, in, px, pt, pc
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*Medidas absolutas 
+            cm, mm, in(polegada), px, pt(ponto), pc(paica)
+            Ponto e paica: Medida da tipografia de papel(não se recomenda usar em material impresso em tela)
 
-            Medidas Relativas
-            em, ex, rem, vw, vh, %
+            Medidas relativas
+            em: Tamanho relativo ao tamanho atual da fonte (M maiúscula)
+            ex: Relativo a altura x de uma fonte (x minúscula);
+            rem: Tipo EM (do tipo root que esta configurado no body)
+            vw: view widht, largura da view port(tamanho da tela), porcentagem da largura 
+            vh: altura da view port
+            %: porcentagem
+
+            Recomendação da W3C para fonte size, ele recomenda o uso do (px, em)
             16px geralmente = 1em
             */
-            font-size: 1em; /*Tamanho da fonte*/
-    
         }
+
         h1 {
+            font: italic bolder 3em 'Work Sans', sans-serif            
+            /*shorthands font
             
-            /*shorthand font
-            -font-style -> font-weight -> font-size ->font-family
-
-            font-family: 'Work Sans', sans-serif;
-            font-weight: bolder;
-            font-size: 3em;
-            font-style: italic;
+            -font-style -> font-weight -> font-size -> font-family
             */
-            font: italic bolder 3em 'Work Sans', sans-serif;
-        } 
-
+        }
+        
         h2 {
-            font: bold 2em 'Work Sans'
-        } 
+            font: italic bold 3em 'serif'
+        }
     </style>
 </head>
 <body>
     <h1>Trabalhando com fontes</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam maxime recusandae laudantium quibusdam nulla reprehenderit necessitatibus quod saepe et laborum, similique vitae quisquam autem enim totam. Modi laboriosam accusantium reiciendis?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae nam excepturi, illo non minima. Cumque repellendus quis magni in minima cupiditate praesentium odit laboriosam exercitationem esse odio, ipsum numquam.
-    </p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam odit, odio a mollitia distinctio explicabo maiores assumenda? Pariatur ut saepe vero magnam quidem tempore, nesciunt, distinctio vel quibusdam commodi beatae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ut possimus omnis ab fuga exercitationem ad consequuntur adipisci laudantium commodi, incidunt, perferendis itaque expedita iusto earum neque quasi. Animi, tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque dolore, deserunt consequuntur explicabo voluptatum? Placeat ducimus, est voluptas deserunt dolorem incidunt debitis illo, esse, ab sit autem distinctio laboriosam. lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eius ad sapiente distinctio quisquam et. Expedita numquam itaque nesciunt autem incidunt, ea molestias obcaecati necessitatibus tempore est doloremque molestiae fuga!</p>
     <h2>Subtítulo do exercício</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam blanditiis ipsum quis delectus. Debitis, dolorem qui. Molestiae quo recusandae laudantium minima, sapiente reprehenderit aliquid tenetur optio expedita repellendus quibusdam consequuntur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum natus velit expedita ullam minus explicabo mollitia tempora, sint a, illum alias eveniet. Temporibus, eos autem numquam delectus itaque odit.</p>
 </body>
 </html>

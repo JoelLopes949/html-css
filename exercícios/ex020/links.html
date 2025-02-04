@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
     <style>
-        /*SELETORES PERSONALIZADOS
-        # = id
-        . = class
-        : = pseudo-class
-        :: = pseudo-elements
-        > = children
-
+        /*
+        SELETORES PERSONALIZADOS
+        id = #
+        class = .
+        peudo-class = :
+        pseudo-element = ::
+        children = >
         */
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -23,38 +24,38 @@
             font-weight: bold;
         }
 
-        a:visited {
-            color: darkred;
-        }
-
         a:hover {
-            color: black;
             text-decoration: underline;
+            background-color: rgb(162, 162, 200);
         }
 
-        a:active {
+        a:visited { /*Quando for visitado já vai estar azul escuro*/
+            color: darkblue;
+        }
+
+        a:active { /*Quando eu clicar ele aparecerá na cor amarela*/
             color: yellow;
         }
 
-        .especial {
-            background-color: pink;
+        .especial::before {
+            content: '⚟ ';
         }
 
-        .especial::before {
-            content: '✪ ';
+        .especial {
+            background-color: aqua;
         }
 
         .especial::after {
-            content: ' ⍟';
+            content: ' ☉';
         }
     </style>
 </head>
 <body>
-    <h1>Personalizando links</h1>
+    <h1>Personalizando Links</h1>
     <ul>
-        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório Github</a></li>
-        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
-        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" class="especial">Canal de Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/blog/curso-tag/logica/" target="_blank">Site do Curso em Video</a></li>
     </ul>
 </body>
 </html>

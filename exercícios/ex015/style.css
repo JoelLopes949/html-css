@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
 body {
-    background-color: azure;
+    background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
 }
 
 h1 {
-    color: maroon;
-    background-color: rgb(209, 170, 71);
+    color: aqua;
+    background-color: rgba(137, 43, 226, 0.367);
 }
 
 h2 {
@@ -17,9 +16,4 @@ h2 {
 
 p {
     text-align: justify;
-}
-
-a {
-    color: darkorange;
-    text-decoration: none;
 }
