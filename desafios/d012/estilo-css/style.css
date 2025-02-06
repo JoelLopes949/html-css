@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'paixao';
+    src: url('../fontes/PassionOne-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'sri';
+    src: url('../fontes/Sriracha-Regular.ttf');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    font-family: 'paixao';
+    font-size: 5vw;
+    padding: 40px 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+header > p {
+    font-size: 22px;
+}
+
+header p > a {
+    color: white;
+    text-decoration: none;
+}
+
+header p > a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: 'sri';
+    font-size: 3vw;
+    font-weight: normal;
+    line-height: 2em;
+    padding: 60px;
+}
+
+#s1 {
+    background-image: url('../imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.c1 {
+    background-color: rgba(0, 0, 0, 0.271);
+    max-width: 40vw;
+    color: white;
+    padding: 20px;
+}
+
+#s2 {
+    background-image: url('../imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.c2 {
+    background-color: rgba(0, 0, 0, 0.271);
+    max-width: 40vw;
+    color: white;
+    padding: 20px;
+}
