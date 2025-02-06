@@ -21,6 +21,8 @@
 header {
     font-family: 'paixao';
     font-size: 5vw;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
     padding: 40px 40px;
     background-color: black;
     color: white;
