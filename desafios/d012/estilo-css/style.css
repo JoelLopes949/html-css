@@ -57,10 +57,11 @@ section {
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.501);
 }
 
 .c1 {
-    background-color: rgba(0, 0, 0, 0.271);
+    background-color: rgba(0, 0, 0, 0.466);
     max-width: 50vw;
     color: white;
     padding: 20px;
@@ -72,10 +73,11 @@ section {
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.501);
 }
 
 .c2 {
-    background-color: rgba(0, 0, 0, 0.271);
+    background-color: rgba(0, 0, 0, 0.466);
     max-width: 50vw;
     color: white;
     padding: 20px;
