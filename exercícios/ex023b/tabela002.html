@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,18 +20,37 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
         
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         .num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(2n-1) {
+            background-color: lightgrey;
         }
     </style>
 </head>
 <!--Anatomia para tabelas grandes
     table
+        caption
         thead
             tr, td, th
         tbody
@@ -41,9 +61,12 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -56,17 +79,114 @@
                 <td>Pernambuco</td>
                 <td class="num">9 555 778</td>
             </tr>
+            <tr>
+                <td>Matogrosso do Sul</td>
+                <td class="num">500 252</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">45 252 333</td>
+            </tr>
+            <tr>
+                <td>Goiais</td>
+                <td class="num">24 521 478</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">4 528 963</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <td>Minas Gerais</td>
+            <td class="num">21 169 852</td>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 555 778</td>
+            </tr>
+            <tr>
+                <td>Matogrosso do Sul</td>
+                <td class="num">500 252</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">45 252 333</td>
+            </tr>
+            <tr>
+                <td>Goiais</td>
+                <td class="num">24 521 478</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">4 528 963</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <td>Minas Gerais</td>
+            <td class="num">21 169 852</td>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 555 778</td>
+            </tr>
+            <tr>
+                <td>Matogrosso do Sul</td>
+                <td class="num">500 252</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">45 252 333</td>
+            </tr>
+            <tr>
+                <td>Goiais</td>
+                <td class="num">24 521 478</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">4 528 963</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <td>Minas Gerais</td>
+            <td class="num">21 169 852</td>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 555 778</td>
+            </tr>
+            <tr>
+                <td>Matogrosso do Sul</td>
+                <td class="num">500 252</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">45 252 333</td>
+            </tr>
+            <tr>
+                <td>Goiais</td>
+                <td class="num">24 521 478</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">4 528 963</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>000000</strong></td>
             </tr>
         </tfoot>
-        <tr>
-            <td>Matogrosso do Sul</td>
-            <td class="num">500 252</td>
-        </tr>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi pariatur necessitatibus dignissimos molestiae quaerat incidunt, fugit sint quod aliquid. Alias laboriosam reiciendis eius illo! Quod perferendis odit distinctio neque quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum beatae numquam sapiente, ducimus quidem culpa nemo ad ex ut ipsam, iusto voluptate voluptatem autem incidunt eligendi aliquam, fugit accusamus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium expedita saepe, voluptas soluta, repudiandae harum quae quam nihil officiis itaque consequatur accusamus atque reiciendis eligendi ad ipsam quaerat tempora assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis minima animi molestiae labore quisquam officia quod, deleniti alias quibusdam voluptatem, ex asperiores delectus tempora modi? Tempora aliquid similique amet corporis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt nisi amet doloremque, cumque officiis repellat facilis deserunt necessitatibus sunt, culpa repudiandae delectus, veniam impedit eius. Minus magni fugiat explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam magni labore quae distinctio sint ratione aut iste veniam dolorum asperiores saepe, laborum quos. Quos debitis ab adipisci repellat? Ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet expedita distinctio omnis veritatis dolorum ipsam corrupti in est, laudantium molestiae sit atque. Ut ipsum, assumenda nihil suscipit voluptatum neque illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa eaque reiciendis? Cupiditate sit corporis eaque assumenda eveniet! Quod hic sit illo ipsa. Quis amet laboriosam ab praesentium, aliquam voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illum a, natus quisquam architecto quas dolores quidem sint tempore magnam asperiores consequatur. Eaque, amet labore iure repellat quia facilis accusantium!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rem, iste iure dignissimos quia eos doloribus. Magni officia ea architecto, quisquam voluptatum magnam illo, voluptate deleniti placeat quae cumque saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, dolorum? Obcaecati unde cum ad velit atque dolores. Sapiente consequuntur ut labore fugiat expedita laborum atque odio minima, sequi quod praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum accusamus rerum voluptas iusto, numquam perferendis dicta aspernatur dignissimos in nam, accusantium molestiae amet sit aliquam. Officiis ab maiores nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ea possimus, esse maiores maxime cupiditate odio hic aliquid neque voluptatibus voluptates repellendus suscipit natus voluptatem quaerat veritatis ab, magnam tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequuntur ad atque odio? Odio vero iusto nisi illum adipisci sapiente nam natus cupiditate, dolores ut. Blanditiis doloremque quasi ipsam obcaecati Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos, eius quae laudantium placeat veniam repellat sequi iste repudiandae mollitia odit perferendis ipsa unde aliquam optio expedita beatae, excepturi explicabo!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rem, iste iure dignissimos quia eos doloribus. Magni officia ea architecto, quisquam voluptatum magnam illo, voluptate deleniti placeat quae cumque saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, dolorum? Obcaecati unde cum ad velit atque dolores. Sapiente consequuntur ut labore fugiat expedita laborum atque odio minima, sequi quod praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum accusamus rerum voluptas iusto, numquam perferendis dicta aspernatur dignissimos in nam, accusantium molestiae amet sit aliquam. Officiis ab maiores nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ea possimus, esse maiores maxime cupiditate odio hic aliquid neque voluptatibus voluptates repellendus suscipit natus voluptatem quaerat veritatis ab, magnam tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequuntur ad atque odio? Odio vero iusto nisi illum adipisci sapiente nam natus cupiditate, dolores ut. Blanditiis doloremque quasi ipsam obcaecati Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos, eius quae laudantium placeat veniam repellat sequi iste repudiandae mollitia odit perferendis ipsa unde aliquam optio expedita beatae, excepturi explicabo!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rem, iste iure dignissimos quia eos doloribus. Magni officia ea architecto, quisquam voluptatum magnam illo, voluptate deleniti placeat quae cumque saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, dolorum? Obcaecati unde cum ad velit atque dolores. Sapiente consequuntur ut labore fugiat expedita laborum atque odio minima, sequi quod praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum accusamus rerum voluptas iusto, numquam perferendis dicta aspernatur dignissimos in nam, accusantium molestiae amet sit aliquam. Officiis ab maiores nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ea possimus, esse maiores maxime cupiditate odio hic aliquid neque voluptatibus voluptates repellendus suscipit natus voluptatem quaerat veritatis ab, magnam tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequuntur ad atque odio? Odio vero iusto nisi illum adipisci sapiente nam natus cupiditate, dolores ut. Blanditiis doloremque quasi ipsam obcaecati Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos, eius quae laudantium placeat veniam repellat sequi iste repudiandae mollitia odit perferendis ipsa unde aliquam optio expedita beatae, excepturi explicabo!</p>
 </body>
 </html>
