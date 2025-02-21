@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*PALETAS DE CORES
+#BF0F30
+#F2B705
+#F2A663
+#BF6734
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../imagens/salgados-612x612.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #BF0F30,
+    #BF6734, #F2A663);
+    box-shadow: 1px 1px 2px #BF0F30;
+}
+
+header > h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #F2B705;
+    text-shadow: 1px 1px 6px black;
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+header p {
+    color: #F2B705;
+    text-shadow: 1px 1px 3px black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header nav {
+    padding: 10px;
+}
+
+header a {
+    color: #F2B705;
+    text-shadow: 1px 1px 3px black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    background-image: linear-gradient(to bottom, #BF0F30,
+    #BF6734, #F2A663);
+    box-shadow: 1px 1px 2px #BF0F30;
+    border-radius: 10px;
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+main h2 {
+    color: #F2B705;
+    text-shadow: 1px 1px 6px black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    text-align: center;
+}
