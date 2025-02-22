@@ -12,7 +12,7 @@
     padding: 0px;
 }
 
-body {
+body, html {
     background-image: url('../imagens/salgados-612x612.jpg');
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,7 +27,7 @@ header > h1 {
     font-family: 'Courier New', Courier, monospace;
     color: #F2B705;
     text-shadow: 1px 1px 6px black;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bolder;
     padding: 20px;
     padding-bottom: 5px;
@@ -36,20 +36,53 @@ header > h1 {
 
 header p {
     color: #F2B705;
+    font-weight: bolder;
     text-shadow: 1px 1px 3px black;
     text-align: center;
     padding-bottom: 20px;
 }
 
-header nav {
-    padding: 10px;
+span#opcoes {
+    background-color: black;
+    color: #F2B705;
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
+
+span#opcoes:hover {
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li {
+    padding-bottom: 5px;
+}
+
+menu > ul > li:hover {
+    text-decoration: underline #F2A663;
 }
 
 header a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    font-weight: bolder;
+    background-color: #BF0F30;
     color: #F2B705;
+    display: block;
+    text-align: center;
     text-shadow: 1px 1px 3px black;
     text-decoration: none;
-    padding: 10px;
+    padding-bottom: 5px;
 }
 
 main {
