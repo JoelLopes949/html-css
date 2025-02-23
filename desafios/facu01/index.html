@@ -21,13 +21,24 @@
                 <li><a href="#">Bebidas</a></li>
                 <li><a href="#">Salgados</a></li>
                 <li><a href="#">Contatos</a></li>
+                <li><a href="#">Adiconar ao carrinho</a></li>
             </ul>
         </menu>
     </header>
     <main>
-        <section>
-            <h2>HAMBURGUER</h2>
-        </section>
+        <h2>HAMBURGUER</h2>
+        <div class="ham">
+            <form action="pedido.php" method="post">
+                <fieldset>
+                    <legend>Lista Hamburgueres</legend>
+                    <input type="checkbox" name="smash" id="ismash">
+                    <label for="ismash">Smash Burguer <img src="imagens/burguer-200x200.png" alt="Smash Burguer"></label>
+                    <input type="checkbox" name="crispy" id="icrispy">
+                    <label for="icrispy">Cripy Burguer <img src="imagens/burguer-200x200.png" alt="Smash Burguer"></label>
+                </fieldset>
+                <p><input type="submit" value="Adcionar ao carrinho"></p>
+            </form>
+        </div>
     </main>
     <script>
         function clickMenu() {

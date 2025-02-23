@@ -13,7 +13,7 @@
 }
 
 body, html {
-    background-image: url('../imagens/salgados-612x612.jpg');
+    background-image: url('../imagens/imagem-612x340.jpg');
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -51,6 +51,7 @@ span#opcoes {
 }
 
 span#opcoes:hover {
+    background-color: rgba(0, 0, 0, 0.89);
     cursor: pointer;
 }
 
@@ -86,19 +87,24 @@ header a {
 }
 
 main {
-    background-image: linear-gradient(to bottom, #BF0F30,
-    #BF6734, #F2A663);
-    box-shadow: 1px 1px 2px #BF0F30;
-    border-radius: 10px;
     width: 90vw;
     margin: auto;
     margin-top: 20px;
 }
 
-main h2 {
+main > h2 {
+    background-image: linear-gradient(to bottom, #BF0F30,
+    #BF6734, #F2A663);
     color: #F2B705;
+    box-shadow: 1px 1px 2px #BF0F30;
+    border-radius: 10px 10px 0px 0px;
     text-shadow: 1px 1px 6px black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 32px;
     text-align: center;
+}
+
+main > div {
+    background-color: rgba(255, 255, 255, 0.916);
+    height: 500px;
 }
