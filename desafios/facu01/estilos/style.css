@@ -106,5 +106,31 @@ main > h2 {
 
 main > div {
     background-color: rgba(255, 255, 255, 0.916);
-    height: 500px;
+    height: 100vh;
 }
+
+main fieldset {
+    padding-left: 20px;
+    display: inline;
+    width: 200px;
+}
+
+.ham {
+    display: flex;
+    justify-content: space-between; /* Distribui os fieldsets com espaços entre eles */
+    flex-wrap: wrap; /* Permite que eles quebrem para a linha seguinte se necessário */
+    gap: 20px; /* Adiciona espaço entre os fieldsets */
+}
+
+fieldset {
+    width: 45%; /* Controla o tamanho de cada fieldset */
+    border: 2px solid #ddd; /* Um exemplo de borda */
+    padding: 15px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura do fieldset */
+}
+
+img {
+    width: 100px; /* Mantém o tamanho da imagem conforme estava antes */
+    height: auto; /* Ajusta a altura para manter a proporção da imagem */
+}
+
