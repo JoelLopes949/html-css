@@ -87,7 +87,6 @@ header a {
 }
 
 main {
-    width: 90vw;
     margin: auto;
     margin-top: 20px;
 }
@@ -107,6 +106,10 @@ main > h2 {
 main > div {
     background-color: rgba(255, 255, 255, 0.916);
     height: 100vh;
+}
+
+main form {
+    padding-left: 30px;
 }
 
 main fieldset {
