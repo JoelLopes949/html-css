@@ -131,6 +131,10 @@ main legend {
     border-radius: 2px;
 }
 
+main.beb form {
+    background-color: transparent;
+}
+
 footer {
     background-color: #BF0F30;
 }
