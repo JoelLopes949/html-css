@@ -113,10 +113,9 @@ main form {
 }
 
 main fieldset {
-    background-color: black;
-    color: #F2B705;
+    color: #BF0F30;
     font-weight: bold;
-    padding-left: 40px;
+    padding-left: 20px;
     margin-top: 20px;
     display: inline;
     width: 200px;
@@ -131,9 +130,7 @@ main legend {
     border-radius: 2px;
 }
 
-main.beb form {
-    background-color: transparent;
-}
+
 
 footer {
     background-color: #BF0F30;
