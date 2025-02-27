@@ -109,11 +109,14 @@ main > div {
 }
 
 main form {
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 main fieldset {
-    padding-left: 20px;
+    background-color: black;
+    color: #F2B705;
+    font-weight: bold;
+    padding-left: 40px;
     margin-top: 20px;
     display: inline;
     width: 200px;
