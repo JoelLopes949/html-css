@@ -106,10 +106,11 @@ main > h2 {
 
 main > div {
     background-color: rgba(255, 255, 255, 0.916);
+    border: 1px solid #BF0F30;
 }
 
 main form {
-    padding-left: 40px;
+    padding-left: 80px;
 }
 
 main fieldset {
@@ -125,6 +126,7 @@ main legend {
     background-image: linear-gradient(to bottom, #BF0F30,
     #BF6734, #F2A663);
     font-weight: normal;
+    font-size: 1.1em;
     color: #F2B705;
     text-shadow: 1px 1px 3px black;
     border-radius: 2px;
