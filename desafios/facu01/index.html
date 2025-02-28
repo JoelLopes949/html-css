@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="#hamburguer">Hamburgueres</a></li>
                 <li><a href="#bebidas">Bebidas</a></li>
-                <li><a href="#">Salgados</a></li>
+                <li><a href="#salgados">Salgados</a></li>
                 <li><a href="#contatos">Contatos</a></li>
             </ul>
         </menu>
@@ -148,7 +148,7 @@
                 </fieldset>
             </form>
         </div>
-        <h2 id="bebidas">BEBIDAS</h2>
+        <h2 id="bebidas" class="titulo">BEBIDAS</h2>
         <div class="beb">
             <form action="pedido.php" method="post">
                 <fieldset>
@@ -186,6 +186,38 @@
                     <input type="checkbox" name="agua" id="iagua">
                     <label for="iagua"><img src="imagens/agua-200x200.jpeg" alt="agua-mineral"></label>
                 </fieldset>
+            </form>
+        </div>
+        <h2 id="salgados" class="titulo">SALGADOS</h2>
+        <div class="sal">
+            <form action="cadastro.php" method="post">
+                <fieldset>
+                    <legend>Paste de Forno...8r$</legend>
+                    <input type="checkbox" name="forno" id="iforno">
+                    <label for="iforno"><img src="imagens/forno-200x200.jpg" alt="sal-forno"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Coxinha...6r$</legend>
+                    <input type="checkbox" name="coxinha" id="icoxinha">
+                    <label for="icoxinha"><img src="imagens/coxinha-200x200.jpg" alt="sal-coxinha"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Pastel...5r$</legend>
+                    <input type="checkbox" name="pastel" id="ipastel">
+                    <label for="ipastel"><img src="imagens/pastel-200x200.jpg" alt="sal-pastel"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Esfiha...5r$</legend>
+                    <input type="checkbox" name="esfiha" id="iesfiha">
+                    <label for="iesfiha"><img src="imagens/esfiha200x200.webp" alt="sal-esfiha"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Enroladinho...4r$</legend>
+                    <input type="checkbox" name="enro" id="ienro">
+                    <label for="ienro"><img src="imagens/enroladinho-200x200.jpg" alt="sal-enroladinho"></label>
+                </fieldset>
+            </form>
+        </div>
     </main>
     <footer id="contatos">
         <p>Endereço:</p>

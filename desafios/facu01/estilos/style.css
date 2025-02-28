@@ -104,6 +104,10 @@ main > h2 {
     text-align: center;
 }
 
+h2.titulo {
+    border-radius: 0px 0px;
+}
+
 main > div {
     background-color: rgba(255, 255, 255, 0.916);
     border: 1px solid #BF0F30;
