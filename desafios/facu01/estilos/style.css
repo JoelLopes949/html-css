@@ -142,6 +142,22 @@ main legend {
 
 
 footer {
-    background-color: #BF0F30;
+    background-image: linear-gradient(to bottom, #BF0F30,
+    #BF6734, #F2A663);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.3em;
+    color: #F2B705;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #BF0F30;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
