@@ -116,7 +116,7 @@ main > div {
 main form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 main fieldset {
