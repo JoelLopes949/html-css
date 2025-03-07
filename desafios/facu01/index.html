@@ -33,7 +33,7 @@
                     <legend>Smash Duplo...35r$</legend>
                     <input type="checkbox" name="sduplo" id="isduplo">
                     <label for="isduplo"><img src="imagens/duplo-100x100.png" alt=""></label>
-                    <ul>
+                    <ul style="padding-bottom: 10px;">
                         <li>Smash 80g (duplo)</li>
                         <li>Cheddar (duplo)</li>
                         <li>Picles (duplo)</li>
@@ -41,12 +41,15 @@
                         <li>Ketchup</li>
                         <li>Maionese</li>
                     </ul>
+                    <label for="quantidade_sduplo" class="quant">Quantidade</label>
+                    <input type="number" id="iquantidade_sduplo" name="quantidade_sduplo" min="0" max="9" onchange="calcularTotal('sduplo', 35)">
+                    <span id="total_sduplo">R$35</span>
                 </fieldset>
                 <fieldset>
                     <legend>Smash Burguer...30r$</legend>
                     <input type="checkbox" name="smash" id="ismash">
                     <label for="ismash"><img src="imagens/burguer-100x100.png" alt="Smash Burguer"></label>
-                    <ul>
+                    <ul style="padding-bottom: 10px;">
                         <li>Smash 80g</li>
                         <li>Cheddar</li>
                         <li>Picles</li>
@@ -54,12 +57,15 @@
                         <li>Ketchup</li>
                         <li>Maionese</li>
                     </ul>
+                    <label for="iquantidade_smash" class="quant">Quantidade</label>
+                    <input type="number" id="iquantidade_smash" name="quantidade_smash" min="0" max="9" onchange="calcularTotal('smash', 30)">
+                    <span id="total_smash">R$30</span>
                 </fieldset>
                 <fieldset>
                     <legend>Crispy Duplo...32r$</legend>
                     <input type="checkbox" name="crisduplo" id="icrisduplo">
                     <label for="icrisduplo"><img src="imagens/burger02-100x100.jpg" alt="Crispy-duplo"></label>
-                    <ul>
+                    <ul style="padding-bottom: 10px;">
                         <li>Pão brioche</li>
                         <li>Hamburguer (duplo)</li>
                         <li>Chedar (duplo)</li>
@@ -67,12 +73,15 @@
                         <li>Crispy Especial</li>
                         <li>Barbecue</li>
                     </ul>
+                    <label for="iquantidade_crisduplo" class="quant">Quantidade</label>
+                    <input type="number" id="iquantidade_crisduplo" name="quantidade_crisduplo" min="0" max="9" onchange="calcularTotal('crisduplo', 32)">
+                    <span id="total_crisduplo">R$32</span>
                 </fieldset>
                 <fieldset>
                     <legend>Crispy Simples...28r$</legend>
                     <input type="checkbox" name="crispy" id="icrispy">
                     <label for="icrispy"><img src="imagens/burguer04-100x100.png" alt="Crispy"></label>
-                    <ul>
+                    <ul style="padding-bottom: 10px;">
                         <li>Pão brioche</li>
                         <li>Hamburguer</li>
                         <li>Chedar</li>
@@ -80,12 +89,15 @@
                         <li>Crispy</li>
                         <li>Barbecue</li>
                     </ul>
+                    <label for="iquantidade_crispy" class="quant">Quantidade</label>
+                    <input type="number" id="iquantidade_crispy" name="quantidade_crispy" min="0" max="9" onchange="calcularTotal('crispy', 28)">
+                    <span id="total_crispy">R$28</span>
                 </fieldset>
                 <fieldset>
                     <legend>X-Salada...27r$</legend>
                     <input type="checkbox" name="salada" id="isalada">
                     <label for="isalda"><img src="imagens/X-Salada-100x100.png" alt="x-salada"></label>
-                    <ul>
+                    <ul style="padding-bottom: 10px;">
                         <li>Pão brioche</li>
                         <li>Hamburguer</li>
                         <li>Queijo</li>
@@ -93,12 +105,15 @@
                         <li>Cebola Roxa</li>
                         <li>Molho</li>
                     </ul>
+                    <label for="iquantidade_salada" class="quant">Quantidade</label>
+                    <input type="number" id="iquantidade_salada" name="quantidade_salada" min="0" max="9" onchange="calcularTotal('salada', 27)">
+                    <span id="total_salada">R$27</span>
                 </fieldset>
                 <fieldset>
                     <legend>Calabresa...26r$</legend>
                     <input type="checkbox" name="calabresa" id="icalabresa">
                     <label for="icalabresa"><img src="imagens/burguer04-100x100.png" alt="calabresa"></label>
-                    <ul>
+                    <ul style="padding-bottom: 10px;">
                         <li>Pão brioche</li>
                         <li>Hamburguer</li>
                         <li>Queijo</li>
@@ -106,12 +121,15 @@
                         <li>Cebola Roxa</li>
                         <li>Ketchup</li>
                     </ul>
+                    <label for="iquantidade_calabresa" class="quant">Quantidade</label>
+                    <input type="number" id="iquantidade_calabresa" name="quantidade_calabresa" min="0" max="9" onchange="calcularTotal('calabresa', 26)">
+                    <span id="total_calabresa">R$26</span>
                 </fieldset>
                 <fieldset>
                     <legend>Cheddar King...26r$</legend>
                     <input type="checkbox" name="cheddar" id="icheddar">
                     <label for="icheddar"><img src="imagens/Cheddar-100x100.png" alt="cheddar-ham"></label>
-                    <ul>
+                    <ul style="padding-bottom: 10px;">
                         <li>Pão brioche</li>
                         <li>Hamburguer</li>
                         <li>Queijo cheddar</li>
@@ -119,12 +137,15 @@
                         <li>Cebola Roxa</li>
                         <li>Ketchup</li>
                     </ul>
+                    <label for="iquantidade_cheddar" class="quant">Quantidade</label>
+                    <input type="number" id="iquantidade_cheddar" name="quantidade_cheddar" min="0" max="9" onchange="calcularTotal('cheddar', 26)">
+                    <span id="total_cheddar">R$26</span>
                 </fieldset>
                 <fieldset>
                     <legend>X-Bacon...25r$</legend>
                     <input type="checkbox" name="bacon" id="ibacon">
                     <label for="ibacon"><img src="imagens/bacon-100x100.jpg" alt="x-bacon"></label>
-                    <ul>
+                    <ul style="padding-bottom: 10px;">
                         <li>Pão brioche</li>
                         <li>Hamburguer</li>
                         <li>Bacon Especial</li>
@@ -132,12 +153,15 @@
                         <li>Alface</li>
                         <li>Maionese</li>
                     </ul>
+                    <label for="iquantidade_bacon" class="quant">Quantidade</label>
+                    <input type="number" id="iquantidade_bacon" name="quantidade_bacon" min="0" max="9" onchange="calcularTotal('bacon', 25)">
+                    <span id="total_bacon">R$25</span>
                 </fieldset>
                 <fieldset>
                     <legend>Tradicional...22r$</legend>
                     <input type="checkbox" name="tradicional" id="itradicional">
                     <label for="itradicional"><img src="imagens/ham-100x100.jpg" alt="ham-tradicional"></label>
-                    <ul>
+                    <ul style="padding-bottom: 10px;">
                         <li>Pão caseiro</li>
                         <li>Hamburguer</li>
                         <li>Presunto</li>
@@ -145,6 +169,9 @@
                         <li>Alface</li>
                         <li>Cebola Roxa</li>
                     </ul>
+                    <label for="iquantidade_tradicional" class="quant">Quantidade</label>
+                    <input type="number" id="iquantidade_tradicional" name="quantidade_tradicional" min="0" max="9" onchange="calcularTotal('tradicional', 22)">
+                    <span id="total_tradicional">R$22</span>
                 </fieldset>
             </form>
         </div>
@@ -155,36 +182,57 @@
                     <legend>Coca 500ml...8r$</legend>
                     <input type="checkbox" name="coca" id="icoca">
                     <label for="icoca"><img src="imagens/coca-200x200.jpg" alt="Coca"></label>
+                    <label for="iquantidade_coca" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_coca" id="iquantidade_coca" min="0" max="9" onchange="calcularTotal('coca'), 8">
+                    <span id="total_coca">R$8</span>
                 </fieldset>
                 <fieldset>
                     <legend>Coca-Cola-Zero...7r$</legend>
                     <input type="checkbox" name="zero" id="izero">
                     <label for="izero"><img src="imagens/coca-cola-zero-200x200.jpg" alt="coca-zero"></label>
+                    <label for="iquantidade_coca_zero" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_coca_zero" id="iquantidade_coca_zero" min="0" max="9" onchange="calcularTotal('coca_zero'), 7">
+                    <span id="total_coca_zero">R$7</span>
                 </fieldset>
                 <fieldset>
                     <legend>Pepsi 500ml...7r$</legend>
                     <input type="checkbox" name="pepsi" id="ipepsi">
                     <label for="ipepsi"><img src="imagens/pepsi-200x200.jpeg" alt="pepsi-refri"></label>
+                    <label for="iquantidade_pepsi" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_pepsi" id="iquantidade_pepsi" min="0" max="9" onchange="calcularTotal('pepsi'), 7">
+                    <span id="total_pepsi">R$7</span>
                 </fieldset>
                 <fieldset>
                     <legend>Fanta 500ml... 7r$</legend>
                     <input type="checkbox" name="fanta" id="ifanta">
                     <label for="ifanta"><img src="imagens/fantaa200x200.jpg" alt="refri-fanta"></label>
+                    <label for="iquantidade_fanta" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_fanta" id="iquantidade_fanta" min="0" max="9" onchange="calcularTotal('fanta'), 7">
+                    <span id="total_fanta">R$7</span>
                 </fieldset>
                 <fieldset>
                     <legend>Suco de Laranja...7r$</legend>
                     <input type="checkbox" name="laranja" id="ilaranja">
                     <label for="ilaranja"><img src="imagens/copo-laranja-200x200.jpg" alt="suco-laranja"></label>
+                    <label for="iquantidade_laranja" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_laranja" id="iquantidade_laranja" min="0" max="9" onchange="calcularTotal('laranja'), 7">
+                    <span id="total_laranja">R$7</span>
                 </fieldset>
                 <fieldset>
                     <legend>Suco de Abacaxi...6r$</legend>
                     <input type="checkbox" name="abacaxi" id="ibacaxi">
                     <label for="ibacaxi"><img src="imagens/abacaxi-200x200.png" alt="suco-abacaxi"></label>
+                    <label for="iquantidade_abacaxi" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_abacaxi" id="iquantidade_abacaxi" min="0" max="9" onchange="calcularTotal('abacaxi'), 6">
+                    <span id="total_abacaxi">R$6</span>
                 </fieldset>
                 <fieldset>
                     <legend>Agua Mineral...5r$</legend>
                     <input type="checkbox" name="agua" id="iagua">
                     <label for="iagua"><img src="imagens/agua-200x200.jpeg" alt="agua-mineral"></label>
+                    <label for="iquantidade_agua" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_agua" id="iquantidade_agua" min="0" max="9" onchange="calcularTotal('agua'), 5">
+                    <span id="total_agua">R$5</span>
                 </fieldset>
             </form>
         </div>
@@ -195,26 +243,41 @@
                     <legend>Paste de Forno...8r$</legend>
                     <input type="checkbox" name="forno" id="iforno">
                     <label for="iforno"><img src="imagens/forno-200x200.jpg" alt="sal-forno"></label>
+                    <label for="iquantidade_pastel_forno" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_pastel_forno" id="iquantidade_pastel_forno" min="0" max="9" onchange="calcularTotal('pastel_forno'), 8">
+                    <span id="total_pastel_forno">R$8</span>
                 </fieldset>
                 <fieldset>
                     <legend>Coxinha...6r$</legend>
                     <input type="checkbox" name="coxinha" id="icoxinha">
                     <label for="icoxinha"><img src="imagens/coxinha-200x200.jpg" alt="sal-coxinha"></label>
+                    <label for="iquantidade_coxinha" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_coxinha" id="iquantidade_coxinha" min="0" max="9" onchange="calcularTotal('coxinha'), 6">
+                    <span id="total_coxinha">R$6</span>
                 </fieldset>
                 <fieldset>
                     <legend>Pastel...5r$</legend>
                     <input type="checkbox" name="pastel" id="ipastel">
                     <label for="ipastel"><img src="imagens/pastel-200x200.jpg" alt="sal-pastel"></label>
+                    <label for="iquantidade_pastel" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_pastel" id="iquantidade_pastel" min="0" max="9" onchange="calcularTotal('pastel'), 5">
+                    <span id="total_pastel">R$5</span>
                 </fieldset>
                 <fieldset>
                     <legend>Esfiha...5r$</legend>
                     <input type="checkbox" name="esfiha" id="iesfiha">
                     <label for="iesfiha"><img src="imagens/esfiha200x200.webp" alt="sal-esfiha"></label>
+                    <label for="iquantidade_esfiha" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_esfiha" id="iquantidade_esfiha" min="0" max="9" onchange="calcularTotal('esfiha'), 5">
+                    <span id="total_esfiha">R$5</span>
                 </fieldset>
                 <fieldset>
                     <legend>Enroladinho...4r$</legend>
                     <input type="checkbox" name="enro" id="ienro">
                     <label for="ienro"><img src="imagens/enroladinho-200x200.jpg" alt="sal-enroladinho"></label>
+                    <label for="iquantidade_enroladinho" class="quant">Quantidade</label>
+                    <input type="number" name="quantidade_enroladinho" id="iquantidade_enroladinho" min="0" max="9" onchange="calcularTotal('enroladinho'), 4">
+                    <span id="total_enroladinho">R$4</span>
                 </fieldset>
             </form>
         </div>
