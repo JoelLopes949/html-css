@@ -291,7 +291,7 @@
         <div id="total-geral">Total: R$0.00</div>
         <button id="fechar-carrinho" onclick="toggleCarrinho()">❌</button>
         <br>
-        <form action="cadastro.php" method="post">
+        <form action="cadastro.html" method="post">
         <fieldset style="padding-left: 5px;">
             <legend>Forma de pagamento</legend>
             <input type="radio" name="Forma de pagamento" id="idinheiro" required>
@@ -307,7 +307,7 @@
         <fieldset style="padding: 2px;">
             <p>Nome: <input type="text" name="nome" id="inome" maxlength="30" required></p>
             <p>E-mail: <input type="email" name="e-mail" id="ie-mail" autocomplete="email" required></p>
-            <p>Endereço: <input type="text" name="endereco" id="iendereco"></p>
+            <p>Endereço: <input type="text" name="endereco" id="iendereco" required></p>
         </fieldset>
             <p><input type="submit" value="Enviar" class="botao-finalizar"><input type="reset" value="Cancelar Pedido" class="botao-cancelar" onclick="cancelarPedido()"></p>
     </form>
@@ -517,7 +517,7 @@ document.getElementById('form-pedido').addEventListener('submit', function (even
     formData.append('total_geral', totalGeral);
 
     // Envia os dados para o cadastro.php
-    fetch('cadastro.php', {
+    fetch('cadastro.html', {
         method: 'POST',
         body: formData
     })
