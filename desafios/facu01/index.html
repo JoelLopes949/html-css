@@ -282,6 +282,17 @@
             </form>
         </div>
     </main>
+    <!-- Carrinho lateral -->
+    <div class="carrinho" id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="lista-carrinho">
+            <!-- Itens do carrinho aqui -->
+        </ul>
+        <button id="fechar-carrinho" onclick="toggleCarrinho()">Fechar Carrinho</button>
+    </div>
+
+    <!-- Botão para abrir o carrinho -->
+    <button id="botao-carrinho" onclick="toggleCarrinho()">Ver Carrinho</button>
     <footer id="contatos">
         <p>Whatsapp: (67) 99875-0000 </p>
         <p>Email: bomsabor10@gmail.com</p>
@@ -289,6 +300,22 @@
         <p style="text-align: center;">Site criado por <a href="https://github.com/JoelLopes949" target="_blank">JoelLopes949<img src="imagens/icone-github.png" alt=""></a></p>
     </footer>
     <script>
+         // Função para exibir ou ocultar o carrinho
+         function toggleCarrinho() {
+            const carrinho = document.getElementById('carrinho');
+            const botaoCarrinho = document.getElementById('botao-carrinho');
+            const fecharCarrinho = document.getElementById('fechar-carrinho');
+
+            // Verifica se o carrinho está visível ou oculto
+            if (carrinho.style.right === '0px') {
+                carrinho.style.right = '-300px'; // Oculta o carrinho
+                botaoCarrinho.style.display = 'block'; // Mostra o botão de "Ver Carrinho"
+            } else {
+                carrinho.style.right = '0px'; // Exibe o carrinho
+                botaoCarrinho.style.display = 'none'; // Oculta o botão de "Ver Carrinho"
+            }
+        }
+        
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
                 itens.style.display = 'block';

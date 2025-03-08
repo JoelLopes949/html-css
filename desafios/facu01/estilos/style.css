@@ -172,3 +172,61 @@ footer a:hover {
     color: #F2B705;
     font-weight: normal;
 }
+
+/* Estilo para o carrinho lateral */
+.carrinho {
+    position: fixed;
+    top: 0;
+    right: -300px;  /* Inicialmente escondido */
+    width: 300px;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-left: 2px solid #BF0F30;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: right 0.3s ease;
+}
+
+.carrinho h2 {
+    font-size: 24px;
+    color: #BF0F30;
+}
+
+.carrinho ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.carrinho ul li {
+    margin: 10px 0;
+}
+
+.carrinho button {
+    background-color: #BF0F30;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.carrinho button:hover {
+    background-color: #F2A663;
+}
+
+/* Estilo do botão de exibir carrinho */
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #BF0F30;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F2A663;
+}
