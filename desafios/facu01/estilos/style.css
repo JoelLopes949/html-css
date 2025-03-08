@@ -90,6 +90,7 @@ main {
     width: 80vw;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 main > h2 {
@@ -151,6 +152,7 @@ footer {
     color: #F2B705;
     padding-top: 10px;
     padding-bottom: 10px;
+    line-height: 1.2;
 }
 
 footer a {
@@ -226,5 +228,20 @@ button {
 }
 
 button:hover {
+    background-color: #F2A663;
+}
+
+#fechar-carrinho {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #BF0F30;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#fechar-carrinho:hover {
     background-color: #F2A663;
 }

@@ -333,6 +333,29 @@
                 itens.style.display = 'block';
             }
         }
+
+        window.addEventListener('scroll', function () {
+    const botaoCarrinho = document.getElementById('botao-carrinho'); // Botão do carrinho (🛒)
+    const footer = document.getElementById('contatos');
+    const main = document.querySelector('main');
+
+    // Calcula a posição do footer em relação ao topo da página
+    const footerTop = footer.getBoundingClientRect().top;
+    const mainBottom = main.getBoundingClientRect().bottom;
+
+    // Altura da janela de visualização
+    const windowHeight = window.innerHeight;
+
+    // Se o footer estiver visível na tela, fixa o botão no final do main
+    if (footerTop <= windowHeight) {
+        botaoCarrinho.style.position = 'absolute';
+        botaoCarrinho.style.bottom = `${mainBottom - windowHeight + 20}px`; // Ajusta a posição
+    } else {
+        // Caso contrário, mantém o botão fixo no canto inferior direito
+        botaoCarrinho.style.position = 'fixed';
+        botaoCarrinho.style.bottom = '20px';
+    }
+});
     </script>
 </body>
 </html>
