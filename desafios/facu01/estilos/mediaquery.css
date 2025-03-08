@@ -33,4 +33,15 @@
      main {
         max-width: 850px;
      }
+
+     footer {
+      font-size: 1.40em;
+      line-height: 1.4em;
+      font-weight: bold;
+      text-align: center;
+     }
+
+     #botao-carrinho {
+         font-size: x-large;
+     }
 }

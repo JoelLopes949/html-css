@@ -31,8 +31,8 @@
             <form action="pedido.php" method="post">
                 <fieldset>
                     <legend>Smash Duplo...35r$</legend>
-                    <input type="checkbox" name="sduplo" id="isduplo">
-                    <label for="isduplo"><img src="imagens/duplo-100x100.png" alt=""></label>
+                    <input type="checkbox" name="sduplo" id="isduplo" onchange="habilitarQuantidade('isduplo', 'iquantidade_sduplo')">
+                    <label for="isduplo"><img src="imagens/duplo-100x100.png" alt="ham-smash"></label>
                     <ul style="padding-bottom: 10px;">
                         <li>Smash 80g (duplo)</li>
                         <li>Cheddar (duplo)</li>
@@ -43,7 +43,7 @@
                     </ul>
                     <label for="quantidade_sduplo" class="quant">Quantidade</label>
                     <input type="number" id="iquantidade_sduplo" name="quantidade_sduplo" min="0" max="9" onchange="calcularTotal('sduplo', 35)">
-                    <span id="total_sduplo">R$35</span>
+                    <span id="total_sduplo">R$</span>
                 </fieldset>
                 <fieldset>
                     <legend>Smash Burguer...30r$</legend>
@@ -183,7 +183,7 @@
                     <input type="checkbox" name="coca" id="icoca">
                     <label for="icoca"><img src="imagens/coca-200x200.jpg" alt="Coca"></label>
                     <label for="iquantidade_coca" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_coca" id="iquantidade_coca" min="0" max="9" onchange="calcularTotal('coca'), 8">
+                    <input type="number" name="quantidade_coca" id="iquantidade_coca" min="0" max="9" onchange="calcularTotal('coca', 8)">
                     <span id="total_coca">R$8</span>
                 </fieldset>
                 <fieldset>
@@ -199,7 +199,7 @@
                     <input type="checkbox" name="pepsi" id="ipepsi">
                     <label for="ipepsi"><img src="imagens/pepsi-200x200.jpeg" alt="pepsi-refri"></label>
                     <label for="iquantidade_pepsi" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_pepsi" id="iquantidade_pepsi" min="0" max="9" onchange="calcularTotal('pepsi'), 7">
+                    <input type="number" name="quantidade_pepsi" id="iquantidade_pepsi" min="0" max="9" onchange="calcularTotal('pepsi', 7)">
                     <span id="total_pepsi">R$7</span>
                 </fieldset>
                 <fieldset>
@@ -207,7 +207,7 @@
                     <input type="checkbox" name="fanta" id="ifanta">
                     <label for="ifanta"><img src="imagens/fantaa200x200.jpg" alt="refri-fanta"></label>
                     <label for="iquantidade_fanta" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_fanta" id="iquantidade_fanta" min="0" max="9" onchange="calcularTotal('fanta'), 7">
+                    <input type="number" name="quantidade_fanta" id="iquantidade_fanta" min="0" max="9" onchange="calcularTotal('fanta', 7)">
                     <span id="total_fanta">R$7</span>
                 </fieldset>
                 <fieldset>
@@ -215,7 +215,7 @@
                     <input type="checkbox" name="laranja" id="ilaranja">
                     <label for="ilaranja"><img src="imagens/copo-laranja-200x200.jpg" alt="suco-laranja"></label>
                     <label for="iquantidade_laranja" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_laranja" id="iquantidade_laranja" min="0" max="9" onchange="calcularTotal('laranja'), 7">
+                    <input type="number" name="quantidade_laranja" id="iquantidade_laranja" min="0" max="9" onchange="calcularTotal('laranja', 7)">
                     <span id="total_laranja">R$7</span>
                 </fieldset>
                 <fieldset>
@@ -223,7 +223,7 @@
                     <input type="checkbox" name="abacaxi" id="ibacaxi">
                     <label for="ibacaxi"><img src="imagens/abacaxi-200x200.png" alt="suco-abacaxi"></label>
                     <label for="iquantidade_abacaxi" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_abacaxi" id="iquantidade_abacaxi" min="0" max="9" onchange="calcularTotal('abacaxi'), 6">
+                    <input type="number" name="quantidade_abacaxi" id="iquantidade_abacaxi" min="0" max="9" onchange="calcularTotal('abacaxi', 6)">
                     <span id="total_abacaxi">R$6</span>
                 </fieldset>
                 <fieldset>
@@ -231,7 +231,7 @@
                     <input type="checkbox" name="agua" id="iagua">
                     <label for="iagua"><img src="imagens/agua-200x200.jpeg" alt="agua-mineral"></label>
                     <label for="iquantidade_agua" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_agua" id="iquantidade_agua" min="0" max="9" onchange="calcularTotal('agua'), 5">
+                    <input type="number" name="quantidade_agua" id="iquantidade_agua" min="0" max="9" onchange="calcularTotal('agua', 5)">
                     <span id="total_agua">R$5</span>
                 </fieldset>
             </form>
@@ -244,7 +244,7 @@
                     <input type="checkbox" name="forno" id="iforno">
                     <label for="iforno"><img src="imagens/forno-200x200.jpg" alt="sal-forno"></label>
                     <label for="iquantidade_pastel_forno" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_pastel_forno" id="iquantidade_pastel_forno" min="0" max="9" onchange="calcularTotal('pastel_forno'), 8">
+                    <input type="number" name="quantidade_pastel_forno" id="iquantidade_pastel_forno" min="0" max="9" onchange="calcularTotal('pastel_forno', 8)">
                     <span id="total_pastel_forno">R$8</span>
                 </fieldset>
                 <fieldset>
@@ -252,7 +252,7 @@
                     <input type="checkbox" name="coxinha" id="icoxinha">
                     <label for="icoxinha"><img src="imagens/coxinha-200x200.jpg" alt="sal-coxinha"></label>
                     <label for="iquantidade_coxinha" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_coxinha" id="iquantidade_coxinha" min="0" max="9" onchange="calcularTotal('coxinha'), 6">
+                    <input type="number" name="quantidade_coxinha" id="iquantidade_coxinha" min="0" max="9" onchange="calcularTotal('coxinha', 6)">
                     <span id="total_coxinha">R$6</span>
                 </fieldset>
                 <fieldset>
@@ -260,7 +260,7 @@
                     <input type="checkbox" name="pastel" id="ipastel">
                     <label for="ipastel"><img src="imagens/pastel-200x200.jpg" alt="sal-pastel"></label>
                     <label for="iquantidade_pastel" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_pastel" id="iquantidade_pastel" min="0" max="9" onchange="calcularTotal('pastel'), 5">
+                    <input type="number" name="quantidade_pastel" id="iquantidade_pastel" min="0" max="9" onchange="calcularTotal('pastel', 5)">
                     <span id="total_pastel">R$5</span>
                 </fieldset>
                 <fieldset>
@@ -268,7 +268,7 @@
                     <input type="checkbox" name="esfiha" id="iesfiha">
                     <label for="iesfiha"><img src="imagens/esfiha200x200.webp" alt="sal-esfiha"></label>
                     <label for="iquantidade_esfiha" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_esfiha" id="iquantidade_esfiha" min="0" max="9" onchange="calcularTotal('esfiha'), 5">
+                    <input type="number" name="quantidade_esfiha" id="iquantidade_esfiha" min="0" max="9" onchange="calcularTotal('esfiha', 5)">
                     <span id="total_esfiha">R$5</span>
                 </fieldset>
                 <fieldset>
@@ -276,7 +276,7 @@
                     <input type="checkbox" name="enro" id="ienro">
                     <label for="ienro"><img src="imagens/enroladinho-200x200.jpg" alt="sal-enroladinho"></label>
                     <label for="iquantidade_enroladinho" class="quant">Quantidade</label>
-                    <input type="number" name="quantidade_enroladinho" id="iquantidade_enroladinho" min="0" max="9" onchange="calcularTotal('enroladinho'), 4">
+                    <input type="number" name="quantidade_enroladinho" id="iquantidade_enroladinho" min="0" max="9" onchange="calcularTotal('enroladinho', 4)">
                     <span id="total_enroladinho">R$4</span>
                 </fieldset>
             </form>
@@ -293,9 +293,11 @@
 
     <!-- Botão para abrir o carrinho -->
     <button id="botao-carrinho" onclick="toggleCarrinho()">🛒</button>
+
+    
     <footer id="contatos">
         <p>Whatsapp: (67) 99875-0000 </p>
-        <p>Email: bomsabor10@gmail.com</p>
+        <p>E-mail: bomsabor10@gmail.com</p>
         <p>CNPJ: 00000000</p>
         <p>Site criado por <a href="https://github.com/JoelLopes949" target="_blank">JoelLopes949<img src="imagens/icone-github.png" alt=""></a></p>
     </footer>
@@ -356,6 +358,78 @@
         botaoCarrinho.style.bottom = '20px';
     }
 });
+
+    function habilitarQuantidade(checkboxId, quantidadeId) {
+        const checkbox = document.getElementById(checkboxId);
+        const quantidade = document.getElementById(quantidadeId);
+
+        if (checkbox.checked) {
+            quantidade.disabled = false;
+        } else {
+            quantidade.disabled = true;
+            quantidade.value = 0; // Reseta o valor da quantidade para 0
+            calcularTotal('sduplo', 35); // Recalcula o total
+        }
+    }
+
+    // Função para calcular o total de cada item e atualizar o total do carrinho
+    function calcularTotal(item, preco) {
+        const quantidade = document.getElementById(`iquantidade_${item}`).value; // Pega a quantidade
+        const total = preco * quantidade; // Calcula o total
+        document.getElementById(`total_${item}`).innerText = `R$${total.toFixed(2)}`; // Atualiza o preço exibido
+
+        // Adiciona o item ao carrinho se a quantidade for maior que 0
+        if (quantidade > 0) {
+            adicionarAoCarrinho(item, quantidade, total);
+        } else {
+            removerDoCarrinho(item); // Remove o item se a quantidade for 0
+        }
+    }
+
+    // Função para adicionar o item ao carrinho
+    function adicionarAoCarrinho(item, quantidade, total) {
+        const carrinho = document.getElementById('lista-carrinho');
+        const itemCarrinho = document.getElementById(`item_${item}`);
+
+        // Verifica se o item já está no carrinho
+        if (!itemCarrinho) {
+            // Cria o item no carrinho
+            const li = document.createElement('li');
+            li.id = `item_${item}`;
+            li.innerHTML = `${quantidade} x ${item} - R$${total.toFixed(2)}`;
+            carrinho.appendChild(li);
+        } else {
+            // Atualiza o item existente no carrinho
+            itemCarrinho.innerHTML = `${quantidade} x ${item} - R$${total.toFixed(2)}`;
+        }
+    }
+
+    // Função para remover o item do carrinho
+    function removerDoCarrinho(item) {
+        const carrinho = document.getElementById('lista-carrinho');
+        const itemCarrinho = document.getElementById(`item_${item}`);
+
+        // Remove o item do carrinho se ele existir
+        if (itemCarrinho) {
+            carrinho.removeChild(itemCarrinho);
+        }
+    }
+
+    // Função para alternar a visibilidade do carrinho
+    function toggleCarrinho() {
+        const carrinho = document.getElementById('carrinho');
+        const botaoCarrinho = document.getElementById('botao-carrinho');
+        const fecharCarrinho = document.getElementById('fechar-carrinho');
+
+        if (carrinho.style.right === '0px') {
+            carrinho.style.right = '-400px'; // Oculta o carrinho
+            botaoCarrinho.style.display = 'block'; // Mostra o botão de "Ver Carrinho"
+        } else {
+            carrinho.style.right = '0px'; // Exibe o carrinho
+            botaoCarrinho.style.display = 'none'; // Oculta o botão de "Ver Carrinho"
+        }
+    }
+    
     </script>
 </body>
 </html>
