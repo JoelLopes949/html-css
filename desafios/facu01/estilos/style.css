@@ -234,6 +234,7 @@ button {
     bottom: 20px;
     right: 20px;
     background-color: lightgreen;
+    border-radius: 10px;
     color: white;
     border: none;
     padding: 10px 20px;
