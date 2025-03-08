@@ -291,8 +291,8 @@
         <div id="total-geral">Total: R$0.00</div>
         <button id="fechar-carrinho" onclick="toggleCarrinho()">❌</button>
         <br>
-        <form action="cadastro.php" method="post"></form>
-        <fieldset>
+        <form action="cadastro.php" method="post">
+        <fieldset style="padding-left: 5px;">
             <legend>Forma de pagamento</legend>
             <input type="radio" name="Forma de pagamento" id="idinheiro" required>
             <label for="idinheiro" style="padding-right: 20px;">Dinheiro</label>
@@ -304,10 +304,13 @@
             <input type="radio" name="Forma de pagamento" id="idebito">
             <label for="idebito">Débito</label>
         </fieldset>
-        <p>Nome: <input type="text" name="nome" id="inome" maxlength="30" required></p>
-        <p>E-mail: <input type="email" name="e-mail" id="ie-mail" autocomplete="email" required></p>
-        <p>Endereço: <input type="text" name="endereco" id="iendereco"></p>
-        <p><input type="submit" value="Enviar"><input type="reset" value="Cancelar Pedido"></p>
+        <fieldset style="padding: 2px;">
+            <p>Nome: <input type="text" name="nome" id="inome" maxlength="30" required></p>
+            <p>E-mail: <input type="email" name="e-mail" id="ie-mail" autocomplete="email" required></p>
+            <p>Endereço: <input type="text" name="endereco" id="iendereco"></p>
+        </fieldset>
+            <p><input type="submit" value="Enviar" class="botao-finalizar"><input type="reset" value="Cancelar Pedido" class="botao-cancelar" onclick="cancelarPedido()"></p>
+    </form>
     </div>
 
     <!-- Botão para abrir o carrinho -->
@@ -466,6 +469,67 @@
     // Atualiza o total geral no carrinho
     document.getElementById('total-geral').innerText = `Total: R$${totalGeral.toFixed(2)}`;
 }
+
+    // Função para limpar o carrinho e redefinir os valores
+function cancelarPedido() {
+    // Limpa a lista de itens do carrinho
+    const listaCarrinho = document.getElementById('lista-carrinho');
+    listaCarrinho.innerHTML = '';
+
+    // Reseta o total geral
+    document.getElementById('total-geral').innerText = 'Total: R$0.00';
+
+    // Reseta todos os checkboxes e quantidades
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+    });
+
+    const quantidades = document.querySelectorAll('input[type="number"]');
+    quantidades.forEach(quantidade => {
+        quantidade.value = 0;
+    });
+
+    const totais = document.querySelectorAll('span[id^="total_"]');
+    totais.forEach(total => {
+        total.innerText = 'R$0.0';
+    });
+
+    // Reseta o formulário
+    document.getElementById('form-pedido').reset();
+}
+
+// Função para enviar o pedido
+document.getElementById('form-pedido').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita o envio padrão do formulário
+
+    // Coleta os dados do formulário
+    const formData = new FormData(this);
+
+    // Adiciona os itens do carrinho ao FormData
+    const itensCarrinho = document.querySelectorAll('#lista-carrinho li');
+    itensCarrinho.forEach((item, index) => {
+        formData.append(`item_${index}`, item.innerText);
+    });
+
+    // Adiciona o total geral ao FormData
+    const totalGeral = document.getElementById('total-geral').innerText;
+    formData.append('total_geral', totalGeral);
+
+    // Envia os dados para o cadastro.php
+    fetch('cadastro.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        // Redireciona para a página de confirmação
+        window.location.href = 'confirmacao.html';
+    })
+    .catch(error => {
+        console.error('Erro ao enviar o pedido:', error);
+    });
+});
     </script>
 </body>
 </html>
