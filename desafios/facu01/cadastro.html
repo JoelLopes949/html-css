@@ -45,15 +45,5 @@
         <p style="text-align: center;">Muito obrigado pela preferência. Tenha um ótimo dia :)</p>
     </div>
     <p style="text-align: center;"><a href="index.html" target="_self">🔙   Voltar a página principal</a></p>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const status = urlParams.get('status');
-    
-        if (status === 'success') {
-            alert('Obrigado pelo seu pedido!');
-            // Ou exiba uma mensagem na página
-            document.getElementById('mensagem').innerHTML = '<p>Obrigado pelo seu pedido!</p>';
-        }
-    </script>
 </body>
 </html>

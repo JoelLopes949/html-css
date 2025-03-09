@@ -499,36 +499,6 @@ function cancelarPedido() {
     document.getElementById('form-pedido').reset();
 }
 
-// Função para enviar o pedido
-document.getElementById('form-pedido').addEventListener('submit', function (event) {
-
-    // Coleta os dados do formulário
-    const formData = new FormData(this);
-
-    // Adiciona os itens do carrinho ao FormData
-    const itensCarrinho = document.querySelectorAll('#lista-carrinho li');
-    itensCarrinho.forEach((item, index) => {
-        formData.append(`item_${index}`, item.innerText);
-    });
-
-    // Adiciona o total geral ao FormData
-    const totalGeral = document.getElementById('total-geral').innerText;
-    formData.append('total_geral', totalGeral);
-
-    // Envia os dados para o cadastro.php
-    fetch('cadastro.html', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        // Redireciona para a página de confirmação
-        window.location.href = 'cadastro.html?status=success';
-    })
-    .catch(error => {
-        console.error('Erro ao enviar o pedido:', error);
-    });
-});
     </script>
 </body>
 </html>
